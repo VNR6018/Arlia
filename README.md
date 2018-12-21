@@ -8,7 +8,7 @@ Arlia is a pragmatic functional and semi-object oriented programming language fo
 
 ### Goals
 
-Arlia wants to be a pretty, pleasant and readable language offering many possibilities in the world of programming, adopting concepts and concepts interesting to use for any type of project.
+Arlia wants to be a pretty, pleasant and readable language offering many possibilities in the world of programming, adopting interesting concepts to use for any type of project.
 
 ### Features
 
