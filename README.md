@@ -51,13 +51,11 @@ I am a young student, very interested in the computer field, and especially in p
 ```hs
 import charm.dio
 
-type Greeter(private name: String) {
-   func greet() {
-      printfn("Welcome " ^ name ^ "!")
-   }
-}
+type Greeter name =
+   let greet =
+      printfn name
 
-let greeter = new Greeter("John")
+let greeter = new Greeter ("John")
 greeter.greet()
 ```
 
