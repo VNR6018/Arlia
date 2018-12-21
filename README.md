@@ -8,7 +8,7 @@ Arlia is a pragmatic functional and semi-object oriented programming language fo
 
 ### Goals
 
-Arlia wants to be a pretty, pleasant and readable language offering many possibilities in the world of programming, adopting concepts and concepts interesting to use for any type of project.
+Arlia wants to be a pretty, pleasant and readable language offering many possibilities in the world of programming, adopting interesting concepts to use for any type of project.
 
 ### Features
 
@@ -30,17 +30,17 @@ Arlia wants to be a pretty, pleasant and readable language offering many possibi
 ### Project status
 
 Arlia is in full development. There may be some significant changes, but the language and its objectives will be met during the alpha versions.
-The current version is the version **0.01**. Indeed, the language and its implementation are still very young.
+The current version is **0.01**. Indeed, the language and its implementation are still very young.
 
 ### The *Charm* hyper-framework
 
-The hyper-framework *Charm* is a collection of mini-framework of all kinds for various uses, including elementary IO management tools, as well as GUI creation and simulation / motion / sound elements, and also projecting a framework for artificial intelligence, via deep learning. Web tools are also being considered, as well as database management tools.
-Arlia, and her elementary functions will of course be able to use this past of *Charm*. But *Charm* is an essential tool for projects of all kinds.
+The hyper-framework *Charm* is a collection of mini-frameworks of all kinds for various uses, including elementary IO management tools, as well as GUI creation and simulation / motion / sound elements, and also projecting a framework for artificial intelligence, via deep learning. Web tools are also being considered, as well as database management tools.
+Arlia, and its elementary functions will of course be able to use this past of *Charm*. But *Charm* is an essential tool for projects of all kinds.
 Note: *Charm* will be implemented after the language creation, be patient! 
 
 ### Web site
 
-[Visit the official Arlia fundation website.](https://vanaur.github.io/)
+[Visit the official Arlia's foundation website.](https://vanaur.github.io/)
 
 ### About the author
 
@@ -64,7 +64,7 @@ greeter.greet()
 ### Functional fibonacci with exception
 
 ```fs
-// A single constructeur type. The parameters are considered as the object fields.
+// A single constructor type. The parameters are considered as the object fields.
 // This type is a pseudo-exception type, internally there are other exceptions.
 type Exception (msg: String)
 
