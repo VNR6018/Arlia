@@ -38,9 +38,9 @@ The hyper-framework *Charm* is a collection of mini-frameworks of all kinds for 
 Arlia, and its elementary functions will of course be able to use this past of *Charm*. But *Charm* is an essential tool for projects of all kinds.
 Note: *Charm* will be implemented after the language creation, be patient! 
 
-### Web site
+### Documentation
 
-[Visit the official Arlia's foundation website.](https://vanaur.github.io/)
+[Visit the project documentation.](https://arlia.gitbook.io/arlia-documentation/)
 
 ### About the author
 
