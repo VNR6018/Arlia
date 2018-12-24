@@ -1,6 +1,8 @@
 # The Arlia programming language
 
-![Arlia icon, designed by Mesabloo](http://image.noelshack.com/fichiers/2018/47/6/1543061036-arlia-gemstone-2.png)
+<img align="right" src="http://image.noelshack.com/fichiers/2018/47/6/1543061036-arlia-gemstone-2.png">
+
+<img src="https://img.shields.io/badge/Made%20with-F%23-blue.svg?style=for-the-badge"> <img src="https://img.shields.io/badge/Build-In%20process-yellow.svg?style=for-the-badge"> <img src="https://img.shields.io/badge/Current%20State-Parser-red.svg?style=for-the-badge">
 
 ### Introduction
 
@@ -12,20 +14,38 @@ Arlia wants to be a pretty, pleasant and readable language offering many possibi
 
 ### Features
 
-- Algebraic types ;
-- Higher order functions;
-- Partial immutability ;
-- Lambda expressions;
-- Generic types ;
-- Static types ;
-- Type inference ;
-- Type class ;
-- Pattern matching;
-- Recursion ;
-- Exception handling ;
-- String interpolation ;
-- Interfaces
-- Matrix operations.
+All the features that will constitute the language. When one of them is checked, it means that it has already been implemented in the compiler. Feel free to propose new ones!
+
+<img src="https://img.shields.io/badge/Current%20State-Parser-red.svg?style=flat-square">
+
+- **Type system**
+  - [ ] Type inference ;
+  - [ ] Type class-like ;
+  - [ ] Alebraic types ;
+  - [ ] Elementary types ;
+  - [ ] Generic types ;
+  - [ ] Interfaces ;
+  - [ ] Static types.
+- **Functions**
+  - [ ] Higher order functions ;
+  - [ ] Lambda functions ;
+  - [ ] Asynchronous functions ;
+  - [ ] Recursion.
+- **Datas**
+  - [ ] Immutability ;
+  - [ ] Pattern matching ;
+  - [ ] String interpolation ;
+  - [ ] Matrix operations.
+- **Other**
+  - [ ] Exception handling ;
+  - [ ] Driven event ;
+  - [ ] Flow structure (`if`-`elif`-`else`, `while`, `do`-`while`, `for`)
+  - [ ] Miscellaneous.
+- **Envisaged features**
+  - [ ] Linear types ;
+  - [ ] Dependent type ;
+  - [ ] Refinement types ;
+  - [ ] Fillers (holes).
 
 ### Project status
 
@@ -40,7 +60,7 @@ Note: *Charm* will be implemented after the language creation, be patient!
 
 ### Documentation
 
-[Visit the project documentation.](https://arlia.gitbook.io/arlia-documentation/)
+[Visit the project documentation](https://arlia.gitbook.io/arlia-documentation/) (not finished yet).
 
 ### About the author
 
@@ -48,7 +68,7 @@ I am a young student, very interested in the computer field, and especially in p
 
 ### Functional and object Hello World
 
-```hs
+```elm
 import charm.dio
 
 type Greeter name =
@@ -59,34 +79,6 @@ let greeter = new Greeter ("John")
 greeter.greet()
 ```
 
-### Functional fibonacci with exception
-
-```fs
-// A single constructor type. The parameters are considered as the object fields.
-// This type is a pseudo-exception type, internally there are other exceptions.
-type Exception (msg: String)
-
-// A sum type, which represents the result. Either `Success` or `Failure`.
-type Result =
-    | Success (Integer)    // Takes an `Integer`
-    | Failure (Exception)  // Takes an `Exception`
-
-// A function that takes an `Integer` (type inference) and returns a `Result`.
-let fibonacci n -> Result =
-    match n with
-    | 0 -> Success 0
-    | 1 -> Success 1
-    | n -> Success (fibonacci(n - 1) + fibonacci(n - 2))
-    | _ -> Failure (new Exception("Can't execute function")) // Exception with an unknown value, NaN for example.
-
-try fibonacci 23 with // We "try" to combine the result of the function with these different possibilities:
-    | Success value -> 
-            printfn "Value: " ^ value.string() // Displays the value.
-    | Failure exception ->
-            printfn "Error: " ^ exception.msg  // Displays the error message.
-```
-
 ### Contribute!
 
 The language is still very young, maybe you have found some flaws in the design? Feel free to **fork** the project, or to suggest improvements or submit comments via the [project issues](https://github.com/vanaur/Arlia/issues).
-
