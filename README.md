@@ -21,7 +21,7 @@ All the features that will constitute the language. When one of them is checked,
 - **Type system**
   - [ ] Type inference ;
   - [ ] Type class-like ;
-  - [ ] Alebraic types ;
+  - [ ] Algebraic types ;
   - [ ] Elementary types ;
   - [ ] Generic types ;
   - [ ] Interfaces ;
