@@ -5,7 +5,7 @@
             <Prefix Keywords1="no" Keywords2="no" Keywords3="no" Keywords4="no" Keywords5="no" Keywords6="no" Keywords7="yes" Keywords8="yes" />
         </Settings>
         <KeywordLists>
-            <Keywords name="Comments">00 01 02 03` 04`</Keywords>
+            <Keywords name="Comments">00// 01 02 03` 04`</Keywords>
             <Keywords name="Numbers, prefix1"></Keywords>
             <Keywords name="Numbers, prefix2"></Keywords>
             <Keywords name="Numbers, extras1"></Keywords>
@@ -13,7 +13,7 @@
             <Keywords name="Numbers, suffix1"></Keywords>
             <Keywords name="Numbers, suffix2"></Keywords>
             <Keywords name="Numbers, range"></Keywords>
-            <Keywords name="Operators1">, + * / % ^ ; = == != &gt;= &lt;= ! &amp; ~ : ( ) { } \ .</Keywords>
+            <Keywords name="Operators1">, + * / % ^ ; == != &gt;= &lt;= ! &amp; : ( ) { } \ .</Keywords>
             <Keywords name="Operators2">.</Keywords>
             <Keywords name="Folders in code1, open"></Keywords>
             <Keywords name="Folders in code1, middle"></Keywords>
@@ -24,11 +24,11 @@
             <Keywords name="Folders in comment, open"></Keywords>
             <Keywords name="Folders in comment, middle"></Keywords>
             <Keywords name="Folders in comment, close"></Keywords>
-            <Keywords name="Keywords1">var&#x000D;&#x000A;func&#x000D;&#x000A;import&#x000D;&#x000A;include&#x000D;&#x000A;let&#x000D;&#x000A;type&#x000D;&#x000A;module&#x000D;&#x000A;while&#x000D;&#x000A;for&#x000D;&#x000A;return&#x000D;&#x000A;continue&#x000D;&#x000A;if&#x000D;&#x000A;elif&#x000D;&#x000A;else&#x000D;&#x000A;extern&#x000D;&#x000A;match&#x000D;&#x000A;to&#x000D;&#x000A;in&#x000D;&#x000A;do&#x000D;&#x000A;step&#x000D;&#x000A;throw&#x000D;&#x000A;try&#x000D;&#x000A;new&#x000D;&#x000A;true&#x000D;&#x000A;false&#x000D;&#x000A;with&#x000D;&#x000A;lambda&#x000D;&#x000A;&#x03BB;&#x000D;&#x000A;then</Keywords>
+            <Keywords name="Keywords1">var&#x000D;&#x000A;import&#x000D;&#x000A;include&#x000D;&#x000A;let&#x000D;&#x000A;type&#x000D;&#x000A;module&#x000D;&#x000A;while&#x000D;&#x000A;for&#x000D;&#x000A;continue&#x000D;&#x000A;if&#x000D;&#x000A;elif&#x000D;&#x000A;else&#x000D;&#x000A;extern&#x000D;&#x000A;match&#x000D;&#x000A;to&#x000D;&#x000A;in&#x000D;&#x000A;do&#x000D;&#x000A;step&#x000D;&#x000A;throw&#x000D;&#x000A;try&#x000D;&#x000A;new&#x000D;&#x000A;true&#x000D;&#x000A;false&#x000D;&#x000A;with&#x000D;&#x000A;lambda&#x000D;&#x000A;&#x03BB;&#x000D;&#x000A;then&#x000D;&#x000A;exposing&#x000D;&#x000A;infix&#x000D;&#x000A;prefix&#x000D;&#x000A;postfix&#x000D;&#x000A;await&#x000D;&#x000A;extrude&#x000D;&#x000A;async</Keywords>
             <Keywords name="Keywords2">public&#x000D;&#x000A;private</Keywords>
             <Keywords name="Keywords3">_&#x000D;&#x000A;|&#x000D;&#x000A;-&gt;&#x000D;&#x000A;&lt;-&#x000D;&#x000A;:&#x000D;&#x000A;|&gt;</Keywords>
-            <Keywords name="Keywords4">String&#x000D;&#x000A;Char&#x000D;&#x000A;Integer&#x000D;&#x000A;Float&#x000D;&#x000A;Boolean&#x000D;&#x000A;Exception&#x000D;&#x000A;typename</Keywords>
-            <Keywords name="Keywords5">Array&#x000D;&#x000A;List&#x000D;&#x000A;Dico&#x000D;&#x000A;</Keywords>
+            <Keywords name="Keywords4">String&#x000D;&#x000A;Char&#x000D;&#x000A;Integer&#x000D;&#x000A;Float&#x000D;&#x000A;Real&#x000D;&#x000A;Boolean&#x000D;&#x000A;Exception&#x000D;&#x000A;List</Keywords>
+            <Keywords name="Keywords5"></Keywords>
             <Keywords name="Keywords6"></Keywords>
             <Keywords name="Keywords7">0x</Keywords>
             <Keywords name="Keywords8"></Keywords>
@@ -43,7 +43,7 @@
             <WordsStyle name="KEYWORDS2" fgColor="0080C0" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
             <WordsStyle name="KEYWORDS3" fgColor="944949" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
             <WordsStyle name="KEYWORDS4" fgColor="8080FF" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
-            <WordsStyle name="KEYWORDS5" fgColor="B994EB" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS5" fgColor="808040" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
             <WordsStyle name="KEYWORDS6" fgColor="808000" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
             <WordsStyle name="KEYWORDS7" fgColor="82A188" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
             <WordsStyle name="KEYWORDS8" fgColor="8F708E" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
