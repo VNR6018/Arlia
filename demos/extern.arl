@@ -1,6 +1,0 @@
-include "INCLUDE\win32a.inc";
-
-extern ("msvcrt")("printf")("Hello, world!");
-
-let str = extern ("msvcrt")("gets")();
-

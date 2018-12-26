@@ -1,6 +1,0 @@
-import lib.dio;
-
-type Person(firstname, lastname, age);
-type Employee(salary, identity: Person);
-
-let employee = new Employee(3600, new Person("Bob", "Marley", 36));

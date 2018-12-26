@@ -1,6 +1,0 @@
-import lib.dio;
-
-let fibonacci(n) = fibonacci(n - 1) + fibonacci(n - 2);
-
-printfn(fibonacci(10));
-
