@@ -25,8 +25,11 @@ All the features that will constitute the language. When one of them is checked,
   - [ ] Elementary types ;
   - [ ] Generic types ;
   - [ ] Interfaces ;
+  - [ ] Custom types ;
   - [ ] Static types.
 - **Functions**
+  - [ ] Declarations ;
+  - [ ] Custom operators ;
   - [ ] Higher order functions ;
   - [ ] Lambda functions ;
   - [ ] Asynchronous functions ;
@@ -40,7 +43,7 @@ All the features that will constitute the language. When one of them is checked,
   - [ ] Exception handling ;
   - [ ] Driven event ;
   - [ ] Flow structure (`if`-`elif`-`else`, `while`, `do`-`while`, `for`)
-  - [ ] Miscellaneous.
+  - [ ] Miscellaneous (assignment, calls, returns, debug, ...)
 - **Envisaged features**
   - [ ] Linear types ;
   - [ ] Dependent type ;
@@ -73,7 +76,7 @@ import charm.dio
 
 type Greeter name =
    let greet =
-      printfn name
+      printfn "%s" name
 
 let greeter = new Greeter ("John")
 greeter.greet()
