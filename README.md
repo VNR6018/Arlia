@@ -63,23 +63,47 @@ Note: *Charm* will be implemented after the language creation, be patient!
 
 ### Documentation
 
-[Visit the project documentation](https://arlia.gitbook.io/arlia-documentation/) (not finished yet).
+[Visit the project website](https://vanaur.github.io/Home.html) (not finished yet).
 
 ### About the author
 
 I am a young student, very interested in the computer field, and especially in programming languages and artificial intelligence. I am alone on this project, but I sincerely hope that others will like it and that others will contribute to it.
 
-### Functional and object Hello World
+### The `Nat` type, example
 
-```elm
-import charm.dio
+```idris
+Nat = Zero | Succ Nat with  -- We define the type and its constructors
+  toInt :: Integer          -- We append a method, called `toInt` that returns an `Integer` literal
+  toInt =
+    match it with           -- We match `it` (the data of `Nat` type instancied) with some patterns
+    | 0 -> Zero
+    | S n -> toInt n + 1
+ 
+ 
+three'nat = Succ (Succ (Succ Zero)) -- We create a data of `Nat` type by using its constructors
+three'int = three'nat.toInt         -- We create another data infered of `Integer` type, and call the method from
+                                    --  the data defined above
 
-type Greeter name =
-   let greet =
-      printfn "%s" name
 
-let greeter = new Greeter ("John")
-greeter.greet()
+str :: { nat: Nat | require nat.toString }
+-- We create a data with a refined type that ask for a `Nat` type that
+--  pocess the `toString` method. We can indicate the type of `toString`
+--  but we will do something after as an example
+
+printfn "int: %d" three'int    -- We use the `printfn` function that print something to screen
+printfn "str: %s" ?str         -- We do the same, BUT we make an hole with the `str` (see above) value.
+                               --  Indeed, this value is not created, just signed. The compiler will display
+                               --  some informations about it (what is expected instead of the hole in fact).
+
+kindOfType :: Boolean -> Type  -- We create a function that return a type such as its argument
+kindOfType True  = Nat         -- If the argument is `True`, the type returned is `Nat`
+kindOfType False = Integer     -- If the argument is `False`, the type returned id `Integer`
+
+-- We define a new data with dependent type
+kind :: (x: Boolean) -> (kindOfType x)
+kind True  = Zero -- If `x` (paramter) is equal to `True`, we return `Zero` (from `Nat`)
+kind False = 0    -- If `x` (paramter) is equal to `False`, we return `0` (from `Integer`)
+
 ```
 
 ### Contribute!
