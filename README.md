@@ -6,60 +6,36 @@
 
 ### Introduction
 
-Arlia is a pragmatic functional and semi-object oriented programming language for general use and will benefit, in the future, from the hyper-framework "Charm", itself written in Arlia.
+Arlia is a functional programming language, projecting a pragmatic development approach, adopting relatively new concepts, such as dependent types, refinement types, algebraic effects and effects, and providing for lazy, optimistic, and parallel evaluation.
 
 ### Goals
 
-Arlia wants to be a pretty, pleasant and readable language offering many possibilities in the world of programming, adopting interesting concepts to use for any type of project.
+Arlia wants to be a pretty, pleasant and readable language offering many possibilities in the world of programming, adopting interesting new concepts to use for any type of project.
+In the long term, a framework bringing together all the tools necessary for all purpose development is planned.
 
 ### Features
 
-All the features that will constitute the language. When one of them is checked, it means that it has already been implemented in the compiler. Feel free to propose new ones!
+All the main features that will constitute the language.
+Feel free to propose new ones!
 
-<img src="https://img.shields.io/badge/Current%20State-Parser-red.svg?style=flat-square">
-
-- **Type system**
-  - [ ] Type inference ;
-  - [ ] Type class-like ;
-  - [ ] Algebraic types ;
-  - [ ] Elementary types ;
-  - [ ] Generic types ;
-  - [ ] Interfaces ;
-  - [ ] Custom types ;
-  - [ ] Static types.
-- **Functions**
-  - [ ] Declarations ;
-  - [ ] Custom operators ;
-  - [ ] Higher order functions ;
-  - [ ] Lambda functions ;
-  - [ ] Asynchronous functions ;
-  - [ ] Recursion.
-- **Datas**
-  - [ ] Immutability ;
-  - [ ] Pattern matching ;
-  - [ ] String interpolation ;
-  - [ ] Matrix operations.
-- **Other**
-  - [ ] Exception handling ;
-  - [ ] Driven event ;
-  - [ ] Flow structure (`if`-`elif`-`else`, `while`, `do`-`while`, `for`)
-  - [ ] Miscellaneous (assignment, calls, returns, debug, ...)
-- **Envisaged features**
-  - [ ] Linear types ;
-  - [ ] Dependent type ;
-  - [ ] Refinement types ;
-  - [ ] Fillers (holes).
+  - Refinement types ;
+  - Dependent types ;
+  - Effects ;
+  - Algebraic effects (= user defined effects) ;
+  - Holes ;
+  - Type methods, with accessibility (like OOP classes) ;
+  - Optimistic execusion.
 
 ### Project status
 
 Arlia is in full development. There may be some significant changes, but the language and its objectives will be met during the alpha versions.
-The current version is **0.01**. Indeed, the language and its implementation are still very young.
+The current version is **0.01**.
 
-### The *Charm* hyper-framework
+### The *Sharm* framework
 
-The hyper-framework *Charm* is a collection of mini-frameworks of all kinds for various uses, including elementary IO management tools, as well as GUI creation and simulation / motion / sound elements, and also projecting a framework for artificial intelligence, via deep learning. Web tools are also being considered, as well as database management tools.
-Arlia, and its elementary functions will of course be able to use this past of *Charm*. But *Charm* is an essential tool for projects of all kinds.
-Note: *Charm* will be implemented after the language creation, be patient! 
+The framework *Sharm* is a collection of mini-frameworks of all kinds for various uses, including elementary IO management tools, as well as GUI creation, also projecting a framework for artificial intelligence, via deep learning. Web tools are also being considered, as well as database management tools.
+Arlia, and its elementary functions will of course be able to use this past of *Sharm*. But *Sharm* would be an essential tool for projects of all kinds.
+Note: *Sharm* will be implemented after the language creation.
 
 ### Documentation
 
